@@ -1,0 +1,100 @@
+.helps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 4rem;
+  background-image: url("../../../images/Partnership//Helps/helps_main_image.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.helps_heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  width: 90%;
+  position: relative;
+}
+
+.helps_heading_box {
+  width: 513px;
+  height: 361px;
+  background-color: rgba(197, 165, 111, 1);
+  transform: translateX(180px);
+  z-index: -100;
+  margin-top: -6rem;
+  /* margin-left: 6rem; */
+}
+
+.helps_heading h3 {
+  font-family: "Marcellus";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 50px;
+  line-height: 80px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.helps_paras {
+  margin-top: 6rem;
+}
+
+.helps_paras p {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.75;
+  margin: 0;
+}
+
+.helps_link {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  text-decoration: underline;
+  margin-top: 6rem;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1100px) {
+  .helps {
+    padding: 4rem 2rem;
+  }
+
+  .helps_heading {
+    width: 95%;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .helps_heading h3 {
+    text-align: center;
+    line-height: 50px;
+  }
+
+  .helps_heading_box {
+   width: 132px;
+   height: 126px;
+   /* margin-right: 8rem; */
+   transform: translateY(90px);
+  }
+}
+
+@media (max-width: 600px) {
+  .helps_heading h3 {
+    font-size: 40px;
+  }
+}

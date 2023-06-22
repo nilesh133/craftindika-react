@@ -1,0 +1,161 @@
+.mission {
+  background-color: rgba(52, 57, 53, 1);
+  padding: 6rem 4rem;
+}
+
+.mission_heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mission_heading p {
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.25em;
+  color: #c5a56f;
+  margin: 0;
+}
+
+.mission_heading h3 {
+  font-family: "MADE Mirage", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 56px;
+  line-height: 80px;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+}
+
+.mission_stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 6rem;
+}
+
+.mission_stats_single {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission_stats_single_circle {
+  font-family: "MADE Mirage", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 280px;
+  border: 1px solid #c5a56f;
+  border-radius: 1000px;
+  font-weight: 100;
+  font-size: 56px;
+  text-align: center;
+  color: #c5a56f;
+}
+
+.mission_stats_single h3 {
+  font-family: "MADE Mirage", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 61px;
+  color: #ffffff;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.mission_stats_single p {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .mission {
+    padding: 5rem 3rem;
+  }
+
+  .mission_heading h3 {
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  .mission_stats {
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .mission_stats_single {
+    margin-top: 4rem;
+  }
+
+  .mission_stats_single_circle {
+    width: 240px;
+    height: 240px;
+    font-size: 48px;
+  }
+
+  .mission_stats_single h3 {
+    font-size: 30px;
+    line-height: 48px;
+  }
+
+  .mission_stats_single p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mission {
+    padding: 3rem 1rem;
+  }
+
+  .mission_heading h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .mission_stats {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  .mission_stats_single {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .mission_stats_single_circle {
+    width: 160px;
+    height: 160px;
+    font-size: 32px;
+  }
+
+  .mission_stats_single h3 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 0.5rem;
+  }
+
+  .mission_stats_single p {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 0.5rem;
+  }
+}

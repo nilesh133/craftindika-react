@@ -1,0 +1,212 @@
+.webinar_about {
+  display: flex;
+  padding: 6rem 10rem;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.webinar_about_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.webinar_about_top_left h4 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin: 0;
+  color: rgba(197, 165, 111, 1);
+}
+
+.webinar_about_top_left_heading h1 {
+  font-family: "MADE Mirage";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 120px;
+  line-height: 150px;
+  color: #343935;
+  margin: 0;
+}
+
+.webinar_about_top_left_paras p {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #343935;
+  opacity: 0.75;
+  margin: 0;
+}
+
+.webinar_about_top_right {
+  position: relative;
+  width: 480.05px;
+  height: 394px;
+}
+
+.webinar_about_top_right .webinar_about_top_right_image1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.webinar_about_top_right_image2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.webinar_about_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.webinar_about_bottom_leftimage {
+  width: 492.74px;
+  height: 445px;
+  background-position: center;
+  background-size: cover;
+}
+
+.webinar_about_bottom_middle {
+ display: flex;
+ flex-direction: column;
+ gap: 3rem;
+}
+
+.webinar_about_bottom_middle_paras p {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #343935;
+  opacity: 0.75;
+  margin: 0;
+}
+
+.webinar_about_bottom_middle a {
+  position: relative;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: rgba(197, 165, 111, 1);
+  text-decoration: none;
+  width: fit-content;
+}
+
+.webinar_about_bottom_middle a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+  height: 2px;
+  margin-top: 0.8rem;
+  background-color: rgba(197, 165, 111, 1);
+}
+
+.webinar_about_bottom_middle_image {
+  width: 353.26px;
+  height: 223px;
+  background-position: center;
+  background-size: cover;
+}
+
+.webinar_about_bottom_right {
+}
+
+.webinar_about_bottom_right_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.webinar_about_bottom_right_content h1 {
+  font-family: "MADE Mirage";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  /* line-height: 61px; */
+  text-align: right;
+  color: #343935;
+  margin: 0;
+  margin-right: 2.5rem;
+  text-align: right;
+}
+
+@media screen and (max-width: 1280px){
+    .webinar_about {
+        padding: 6rem 2rem;
+    }
+}
+
+@media screen and (max-width: 1055px){
+    .webinar_about {
+        padding: 6rem 1rem;
+    }
+
+    .webinar_about_top {
+        flex-direction: column;
+    }
+
+    .webinar_about_top_left_heading h1 {
+        font-size: 60px;
+        line-height: 40px;
+        margin: 2rem 0;
+    }
+
+    .webinar_about_top_right {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+    }
+
+    .webinar_about_top_right_image2 {
+      display: none;
+    }
+
+    .webinar_about_top_right .webinar_about_top_right_image1 {
+        width: 100%;
+        height: 70%;
+        object-fit: contain;
+        /* margin: 0 0.5rem; */
+    }
+}
+
+@media screen and (max-width: 1050px){
+  .webinar_about_bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .webinar_about_bottom_leftimage {
+    width: 100%;
+  }
+
+  .webinar_about_bottom_middle {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .webinar_about_bottom_middle_image {
+    width: 100%;
+    object-fit: contain;
+  }
+}

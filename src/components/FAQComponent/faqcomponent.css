@@ -1,0 +1,78 @@
+.faqcomponent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 6rem 4rem;
+}
+
+.faqcomponent_left {
+  width: 35%;
+}
+
+.faqcomponent_left h3 {
+  font-family: "MADE Mirage", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 44px;
+  line-height: 80px;
+  color: #343935;
+  margin: 0;
+}
+
+.faqcomponent_right {
+  width: 65%;
+}
+
+.faqcomponent_right .MuiPaper-root {
+  box-shadow: none;
+  /* border-bottom: 2px solid #343935; */
+}
+
+.faqcomponent_right .MuiAccordionSummary-content{
+  justify-content: center !important;
+}
+
+.faqcomponent_right .MuiAccordionSummary-content p {
+  font-family: "Marcellus";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 61px;
+  color: #c5a56f;
+  text-align: center;
+}
+
+.faqcomponent_right .MuiAccordionDetails-root {
+  text-align: center;
+}
+
+.faqcomponent_right .MuiAccordionDetails-root p {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #343935;
+  opacity: 0.75;
+}
+
+@media screen and (max-width: 931px){
+  .faqcomponent {
+    flex-direction: column;
+    padding: 6rem 2rem;
+  }
+
+  .faqcomponent_left {
+    width: 100%;
+  }
+  .faqcomponent_right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 680px){
+  .faqcomponent_right .MuiAccordionSummary-content p {
+    font-size: 40px;
+  }
+}

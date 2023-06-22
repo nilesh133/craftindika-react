@@ -1,0 +1,133 @@
+.webinar_common {
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.webinar_common_reverse {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  overflow-x: hidden;
+}
+
+.webinar_common_image {
+  width: 700px;
+  height: 750px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.webinar_common_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.webinar_common_content {
+  padding: 4rem;
+  background-color: #fff;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.webinar_common_content h3 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #c5a56f;
+  margin: 0;
+}
+
+.webinar_common_content h1 {
+  font-family: "Marcellus";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 56px;
+  line-height: 80px;
+  color: #343935;
+  margin: 0;
+}
+
+.webinar_common_content_paras {
+  margin: 0.7rem 0 1rem;
+}
+
+.webinar_common_content_paras p {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #343935;
+  margin: 0;
+}
+
+.webinar_common_content a {
+  position: relative;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: rgba(197, 165, 111, 1);
+  text-decoration: none;
+  width: fit-content;
+}
+
+.webinar_common_content a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+  height: 2px;
+  margin-top: 0.8rem;
+  background-color: rgba(197, 165, 111, 1);
+}
+
+@media screen and (max-width: 950px){
+  .webinar_common {
+    flex-direction: column;
+  }
+
+  .webinar_common_reverse {
+    flex-direction: column;
+  }
+
+  .webinar_common_content {
+    transform: translate(0rem) !important;
+  }
+
+  
+}
+
+@media screen and (max-width: 720px) {
+  
+  .webinar_common_content {
+    width: 90%;
+    padding: 1.5rem 0 1.5rem 1rem;
+    padding-right: 0;
+  }
+
+  .webinar_common_content h3 {
+    font-size: 16px;
+  }
+
+  .webinar_common_content h1 {
+    font-size: 38px;
+    line-height: 40px;
+    margin: 1rem 0;
+  }
+}

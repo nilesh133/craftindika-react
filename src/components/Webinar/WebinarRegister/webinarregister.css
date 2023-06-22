@@ -1,0 +1,128 @@
+.webinarregister {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 6rem 10rem;
+  background: #c5a56f;
+  gap: 1rem;
+}
+
+.webinarregister h1 {
+  font-family: "Marcellus";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 56px;
+  line-height: 80px;
+  color: #343935;
+}
+
+.webinarregister_inputs_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.webinarregister_inputs_container_box p {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #343935;
+}
+
+.webinarregister_inputs_container_box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.webinarregister_inputs_container_box input {
+  width: 80%;
+  padding: 1.2rem;
+  border: none;
+  outline: none;
+  font-family: "Red Hat Display";
+}
+
+.webinarregister_inputs_container_box:nth-child(2) {
+    align-items: flex-end;
+}
+
+.webinarregister_inputs_container_box input::placeholder {
+    font-family: "Red Hat Display";
+}
+
+.webinarregister_sign_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.webinarregister_sign_container_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.webinarregister_sign_container_left p {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #343935;
+}
+
+.webinarregister_sign_button {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    gap: 32px;
+    width: fit-content;
+    border: 1px solid rgba(52, 57, 53, 1);
+    border-radius: 64px;
+    text-align: right;
+    color: rgba(52, 57, 53, 1);
+    font-size: 16px;
+  }
+
+
+  @media screen and (max-width: 1050px){
+    .webinarregister {
+      padding: 6rem 3rem;
+    }
+  }
+
+  @media screen and (max-width: 590px){
+    .webinarregister {
+      padding: 6rem 2rem;
+    }
+
+    .webinarregister h1 {
+      font-size: 40px;
+    }
+
+    .webinarregister_inputs_container {
+      flex-direction: column;
+    }
+
+    .webinarregister_inputs_container_box {
+      width: 100%;
+      align-items: flex-start !important;
+    }
+
+    .webinarregister_sign_container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  @media screen and (max-width: 420px){
+    .webinarregister {
+      padding: 6rem 1rem;
+    }
+  }

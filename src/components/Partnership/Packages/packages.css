@@ -1,0 +1,137 @@
+.packages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 4rem;
+}
+
+.packages_header {
+}
+
+.packages_header p {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #c5a56f;
+}
+
+.packages_header h1 {
+  font-family: "Marcellus";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 64px;
+  line-height: 80px;
+  text-align: center;
+  color: #343935;
+  margin: 0;
+}
+
+.packages_content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.packages_content_single {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.packages_content_single_show {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  gap: 4rem;
+}
+
+.packages_content_single_show h1 {
+  font-family: "Marcellus";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 61px;
+  color: #343935;
+}
+
+.packages_content_single_show p {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #343935;
+}
+
+.packages_content_single_show h2 {
+  font-family: "Marcellus";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 61px;
+  text-align: right;
+  color: #343935;
+  opacity: 0.5;
+}
+
+.packages_content_single_hide_content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* position: relative;
+    width: 100%; */
+}
+
+.packages_content_single_hide_content_box {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.packages_content_single_hide_content_box {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.packages_content_single_hide_content_box h3 {
+  font-family: "Marcellus";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #343935;
+  margin: 0;
+}
+
+.packages_content .MuiPaper-root {
+  box-shadow: none !important;
+}
+
+.packages_content .MuiButtonBase-root {
+    padding: 0;
+}
+
+.packages_content .MuiAccordionSummary-content span {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #c5a56f;
+}

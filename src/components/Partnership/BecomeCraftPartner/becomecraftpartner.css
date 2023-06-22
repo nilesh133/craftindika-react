@@ -1,0 +1,61 @@
+.becomecraftpartner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 6rem 4rem;
+}
+
+.becomecraftpartner_heading {
+}
+
+.becomecraftpartner_heading h3:nth-child(1) {
+  font-family: "MADE Mirage";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 180px;
+  line-height: 180px;
+  color: #343935;
+  margin: 0;
+  text-align: center;
+}
+
+.becomecraftpartner_heading h3:nth-child(2) {
+  font-family: "Meow Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 160px;
+  line-height: 192px;
+  color: #c5a56f;
+  margin: 0;
+  text-align: center;
+  margin-top: -6rem;
+}
+
+.becomecraftpartner_paras {
+    margin: 3rem 0;
+}
+
+.becomecraftpartner_paras p {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #343935;
+  margin: 0;
+}
+
+.becomecraftpartner_button {
+  display: flex;
+  align-items: center;
+  padding: 6px 14px;
+  gap: 32px;
+  width: fit-content;
+  border: 1px solid#343935;
+  border-radius: 64px;
+  text-align: right;
+  color: #343935;
+  left: 90%;
+}

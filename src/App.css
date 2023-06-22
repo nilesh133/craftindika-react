@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.carousel {
+  height: 600px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'MADE Mirage';
+  /* src: url('fonts/MyCustomFont-Regular.ttf') format('truetype'); */
+  src: url('fonts/MADE\ Mirage\ Black\ PERSONAL\ USE.otf') format('truetype');
+  src: url('fonts/MADE\ Mirage\ Bold\ PERSONAL\ USE.otf') format('truetype');
+  src: url('fonts/MADE\ Mirage\ Medium\ PERSONAL\ USE.otf') format('truetype');
+  src: url('fonts/MADE\ Mirage\ Thin\ PERSONAL\ USE.otf') format('truetype');
+  src: url('fonts/MADE\ Mirage\ Regular\ PERSONAL\ USE.otf') format('truetype');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: 'Biennale';
+  /* src: url('fonts/MyCustomFont-Regular.ttf') format('truetype'); */
+  src: url('fonts/Fontspring-DEMO-biennale-light.otf') format('truetype');
+  src: url('fonts/Fontspring-DEMO-biennale-lightit.otf') format('truetype');
+  src: url('fonts/Fontspring-DEMO-biennale-medium.otf') format('truetype');
+  src: url('fonts/Fontspring-DEMO-biennale-thin.otf') format('truetype');
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* gray-color-1: #dcdcdc */
+/* gray-color-2: #a9a9a9 */
+/* red-color-1: #870827 */
+/* white-color-1: #ebe6e6e */
+/* black-color-1 : #13131a*/

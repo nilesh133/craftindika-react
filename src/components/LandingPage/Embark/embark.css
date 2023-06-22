@@ -1,0 +1,150 @@
+.embark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 10rem;
+}
+
+.embark_content {
+  width: 100%;
+  display: flex;
+}
+
+.embark_content_left {
+  position: relative;
+  width: 55%;
+  height: 452px;
+}
+
+.embark_content_left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.embark_content_right {
+  background-color: rgba(11, 59, 58, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 80px; */
+  gap: 24px;
+  height: 452px;
+  box-sizing: border-box;
+  width: 45%;
+}
+
+.embark_content_right_heading h3 {
+  font-family: "MADE Mirage", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  /* line-height: 52px; */
+  color: #c8b5a3;
+  margin: 0;
+}
+
+.embark_content_right_paras p {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  /* line-height: 52px; */
+  color: #fff;
+  margin: 0;
+}
+
+.embark_content_right_input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 8px 6px 24px;
+  gap: 8px;
+  border: 1px solid #ffffff;
+  border-radius: 4rem;
+  /* width: 100%; */
+}
+
+.embark_content_right_input_shop {
+  display: flex;
+  align-items: center;
+  padding: 14px 18px;
+  gap: 32px;
+  width: fit-content;
+  border: 1px solid #ffffff;
+  border-radius: 4rem;
+  text-align: right;
+  color: #fff;
+}
+
+.embark_content_right_input input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.embark_content_right_input input::placeholder {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 1rem;
+}
+
+.embark_content_right_input_shop p{
+    font-family: "Red Hat Display", sans-serif;
+    margin: 0;
+}
+
+@media screen and (max-width: 1252px) {
+  .embark {
+    padding: 6rem 4rem;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .embark {
+    padding: 6rem 2rem;
+  }
+
+  .embark_content {
+    flex-direction: column;
+  }
+
+  .embark_content_left {
+    width: 100%;
+  }
+
+  .embark_content_right {
+    width: 100%;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 512px){
+  .embark_content_right h3{
+    font-size: 22px;
+  }
+
+  .embark_content_right_paras p {
+    font-size: 12px;
+  }
+
+  .embark_content_right_input {
+    padding: 6px 8px 6px 15px;
+  }
+
+  .embark_content_right_input_shop {
+    padding: 6px 10px;
+  }
+
+  .embark_content_right_input_shop p {
+    display: none;
+  }
+
+  .embark_content_right_input input {
+    font-size: 0.7rem;
+  }
+}

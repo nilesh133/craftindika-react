@@ -1,0 +1,33 @@
+.webinarembark {
+  padding: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.webinarembark h1 {
+  font-family: "MADE Mirage", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 50px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #343935;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px){
+  .webinarembark {
+    padding: 8rem 2rem;
+  }
+
+  .webinarembark h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}

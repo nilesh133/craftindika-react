@@ -1,0 +1,80 @@
+.webinarschedule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 6rem 4rem;
+  background-color: #fff;
+  gap: 4rem;
+}
+
+.webinarschedule_paras {
+}
+
+.webinarschedule_paras p {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #343935;
+  margin: 0;
+}
+
+.webinarschedule_details {
+  text-align: center;
+}
+
+.webinarschedule_details h4 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #c5a56f;
+  margin: 0;
+}
+
+.webinarschedule_details h1 {
+    font-family: 'MADE Mirage';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 56px;
+    line-height: 80px;
+    color: #343935;
+    margin: 0;
+  }
+  
+  .webinarschedule_details_button {
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    gap: 32px;
+    width: fit-content;
+    border: 1px solid rgba(52, 57, 53, 1);
+    border-radius: 64px;
+    text-align: right;
+    color:rgba(52, 57, 53, 1);
+    font-size: 14px;
+    margin-top: 1rem;
+  }
+
+  .webinarschedule_details_button p {
+    margin: 0;
+  }
+
+  @media screen and (max-width: 768px){
+    .webinarschedule {
+      padding: 6rem 2rem;
+    }
+
+    .webinarschedule_details h1 {
+      font-size: 48px;
+      line-height: 55px;
+    }
+
+  }

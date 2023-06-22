@@ -1,0 +1,66 @@
+.news {
+  background-image: url("../../../images/Partnership/News/news_main_image.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  padding: 6rem 4rem;
+  display: flex;
+  /* justify-content: center; */
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.news_box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px 100px;
+  gap: 55px;
+  background: #ffffff;
+  width: 50%;
+  height: auto;
+  margin-right: 5rem;
+}
+
+.news_box a {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #c5a56f;
+}
+
+.news_box h3 {
+  font-family: "Marcellus";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 61px;
+  color: #343935;
+}
+
+.news_pagination {
+  display: flex;
+  gap: 3rem;
+  margin-top: 3rem;
+  margin-right: 5rem;
+}
+
+.news_pagination_active {
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  padding: 0.8rem 1.4rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.news_pagination_notactive {
+  background-color: transparent;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.8rem 1.4rem;
+  cursor: pointer;
+}

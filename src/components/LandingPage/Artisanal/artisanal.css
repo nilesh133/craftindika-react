@@ -1,0 +1,169 @@
+.artisanal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 4rem;
+}
+
+.artisanal_flower_image {
+  margin-bottom: 2rem;
+}
+
+.artisanal_heading {
+  z-index: 100;
+}
+
+.artisanal_heading h1 {
+  font-family: "MADE Mirage", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 51px;
+  line-height: 65px;
+  text-align: center;
+  color: #343935;
+  margin: 0;
+}
+
+.artisanal_heading h1 span {
+  font-family: "Meow Script", sans-serif;
+  color: rgba(197, 165, 111, 1);
+}
+
+.artisanal_image {
+  background: #f3e5c9;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 578px;
+  height: 268px;
+  margin-top: -6rem;
+}
+
+.artisanal_image img {
+  position: absolute;
+  width: 80%;
+  height: 90%;
+  object-fit: contain;
+  padding-top: 3rem;
+}
+
+.artisanal_present {
+  padding-top: 3rem;
+}
+
+.artisanal_present p {
+  text-align: center;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #343935;
+  opacity: 0.75;
+  margin: 0;
+}
+
+.artisanal_learnmore {
+  margin-top: 2rem;
+}
+
+.artisanal_learnmore a {
+  position: relative;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #343935;
+  text-decoration: none;
+}
+
+.artisanal_learnmore a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 2px;
+  background-color: #343935;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .artisanal {
+    padding: 4rem 2rem;
+  }
+
+  .artisanal_image {
+    width: 100%;
+    height: 50vh;
+    margin-top: -6rem;
+  }
+
+  .artisanal_image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .artisanal_heading h1 {
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  .artisanal_present p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .artisanal_learnmore {
+    margin-top: 3rem;
+  }
+
+  .artisanal_learnmore a {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .artisanal {
+    padding: 4rem 2rem;
+  }
+
+  .artisanal_heading h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .artisanal_image {
+    width: 100%;
+    height: 50vh;
+    margin-top: -4rem;
+  }
+
+  .artisanal_image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .artisanal_present p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .artisanal_learnmore {
+    margin-top: 2rem;
+  }
+
+  .artisanal_learnmore a {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}

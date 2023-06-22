@@ -1,0 +1,49 @@
+.webinar_stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6rem 8rem;
+  background-color: rgba(141, 60, 55, 1);
+}
+
+.webinar_stats_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.webinar_stats_box h3:nth-child(1) {
+  font-family: "MADE Mirage";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 45px;
+  line-height: 80px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+.webinar_stats_box h3:nth-child(2) {
+  font-family: "MADE Mirage";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 61px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+@media screen and (max-width: 1068px){
+  .webinar_stats {
+    padding: 6rem 2rem;
+  }
+}
+
+@media screen and (max-width: 830px){
+  .webinar_stats {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}

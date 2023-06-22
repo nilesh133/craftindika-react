@@ -1,0 +1,214 @@
+.showcase {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 10rem;
+  background-color: rgba(237, 234, 229, 1);
+  height: auto;
+}
+
+.showcase_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.showcase_header_left p {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #c5a56f;
+  margin: 0;
+}
+
+.showcase_header_left h3 {
+  font-family: "MADE Mirage", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 56px;
+  line-height: 80px;
+  color: rgba(52, 57, 53, 1);
+  margin: 0;
+}
+
+.showcase_header_right a {
+  position: relative;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #343935;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.showcase_header_right a::after {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+  height: 1px;
+  background-color: #343935;
+}
+
+.showcase_carousel {
+  margin-top: 6rem;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .showcase_carousel_single_main {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  } */
+
+.showcase_carousel_single {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  /* height: 300px; */
+}
+
+.showcase_carousel_single img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.showcase_carousel_single_info {
+  padding: 2rem;
+  background-color: transparent;
+}
+
+.showcase_carousel_single_info p {
+  font-family: "Biennale", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #c5a56f;
+  margin: 0;
+}
+
+.showcase_carousel_single_info h3 {
+  font-family: "MADE Mirage", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 25px;
+  line-height: 40px;
+  color: #343935;
+  margin: 0;
+}
+
+.showcase .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.showcase .swiper-slide {
+  /* text-align: center; */
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.showcase .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.showcase .swiper-button-next::after {
+  content: "";
+  width: 60%;
+  height: 60%;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../../images//LandingPage/Featured/next-arrow.png") !important;
+}
+
+.showcase .swiper-button-prev::after {
+  content: "";
+  width: 60%;
+  height: 60%;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../../images//LandingPage/Featured/prev-arrow.png") !important;
+}
+
+.showcase .swiper-button-next,
+.showcase .swiper-button-prev {
+  font-size: 1rem !important;
+  background: rgba(197, 165, 111, 1);
+  padding: 0.7rem 1.3rem;
+  border-radius: 50%;
+}
+
+.showcase .swiper-button-next::after,
+.showcase .swiper-button-prev::after {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1082px){
+  .showcase {
+    padding: 6rem 5rem;
+  }
+  .showcase_header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .showcase {
+    padding: 6rem 2rem;
+  }
+
+  .showcase_header_left h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .showcase_header_right{
+    margin-top: 2rem;
+  }
+
+  /* .swiper-button-prev {
+    margin-top: -3rem;
+  }
+
+  .swiper-button-next {
+    margin-top: -3rem;
+  } */
+}
+
+@media screen and (max-width: 398px){
+  .swiper-button-prev {
+    margin-top: -4rem;
+  }
+
+  .swiper-button-next {
+    margin-top: -4rem;
+  }
+}

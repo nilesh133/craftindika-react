@@ -1,0 +1,71 @@
+.certified {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 10rem;
+}
+
+.certified_content {
+  background-color: #EDEAE5;
+  padding: 4rem 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.certified_content h3 {
+  font-weight: 100;
+  font-size: 52px;
+  line-height: 80px;
+  text-align: center;
+  color: #343935;
+  font-family: "MADE Mirage", sans-serif;
+  margin: 0;
+}
+
+.certified_content p {
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 30px;
+  text-align: center;
+  color: #343935;
+  margin: 0;
+  width: 100%;
+}
+
+.certified_content_button {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 32px;
+  width: fit-content;
+  border: 1px solid rgba(52, 57, 53, 1);
+  border-radius: 4rem;
+  text-align: right;
+  color: rgba(52, 57, 53, 1);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 970px) {
+  .certified {
+    padding: 6rem;
+  }
+
+  .certified_content {
+    padding: 4rem 2rem;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .certified {
+    padding: 6rem 2rem;
+    margin: 0 auto;
+  }
+
+  .certified {
+    width: 80%;
+  }
+}

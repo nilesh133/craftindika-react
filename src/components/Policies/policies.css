@@ -1,0 +1,56 @@
+.policies {
+    padding: 2rem 0;
+}
+
+.policies_header {
+    text-align: center;
+    background-color: #870827;
+    color: #fff;
+    padding: 3.4rem 0;
+}
+
+.policies_header h3 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 0 1.5rem;
+}
+
+.policies_content {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+/* .policies_content_data h3 {
+    font-weight: 700;
+    font-size: 1rem;
+} */
+
+.policies_content_data {
+    text-align: justify;
+}
+
+.policies_content_data p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.policies_content_data h1 {
+    font-size: 23px;
+}
+
+.policies_content_data h2 {
+    font-size: 20px;
+}
+
+.policies_content_data ul li {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .policies_content {
+        max-width: 86%;
+        margin: 0 auto;
+    }
+}

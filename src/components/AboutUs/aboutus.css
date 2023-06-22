@@ -1,0 +1,136 @@
+.aboutus_header {
+  background-image: url("https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
+  height: 450px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  flex-direction: column;
+}
+
+.aboutus_header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.aboutus_header h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.aboutus_info {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.aboutus_info p {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.aboutus_discover {
+  background-color: #870827;
+  padding: 2rem 1.5rem;
+}
+
+.aboutus_discover_top {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+}
+
+.aboutus_discover_top h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.aboutus_discover_top p {
+  text-align: center;
+  color: #fff;
+}
+
+.aboutus_discover_top button {
+  text-align: center;
+  padding: 0.6rem 1rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+}
+
+.aboutus_discover_svg {
+  transform: rotateY(180deg);
+  overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+}
+
+.aboutus .swiper {
+    width: 500px;
+    height: 510px;
+  }
+  
+  .aboutus .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutus .swiper figure {
+    width: 100%;
+    height: 100%;
+  }
+
+  .aboutus .swiper-slide figcaption {
+    margin-top: 4rem;
+    font-size: 3rem;
+  }
+  
+  .aboutus .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about_us_swiper {
+    position: relative;
+    margin-top: 5rem;
+  }
+
+  .about_us_swiper_goldenborder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 630px;
+    height: 620px;
+    object-fit: cover;
+  }
+  
+  /* .about_us_swiper {
+    background: url("https://www.pngkey.com/png/full/97-973557_transparent-gold-border.png");
+    width: 780px;
+    height: 1000px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+  } */

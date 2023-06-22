@@ -1,0 +1,58 @@
+.webinarbonus {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 6rem 10rem;
+  gap: 20px;
+  isolation: isolate;
+  background: #8d3c37;
+}
+
+.webinarbonus h1 {
+  font-family: "MADE Mirage", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 46px;
+  line-height: 80px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.webinarbonus_paras {
+
+}
+
+.webinarbonus p {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0;
+}
+
+
+.webinar_bonus_button {
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    gap: 32px;
+    width: fit-content;
+    border: 1px solid #ffffff;
+    border-radius: 64px;
+    text-align: right;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 1rem;
+  }
+
+  @media screen and (max-width: 772px){
+    .webinarbonus {
+      padding: 6rem 2rem;
+    }
+
+    .webinarbonus h1 {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  }

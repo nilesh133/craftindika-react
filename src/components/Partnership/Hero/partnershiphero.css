@@ -1,0 +1,46 @@
+.partnership_hero {
+  background: url("../../../images/Partnership/Hero/partnership_hero_main_image.jpg");
+  padding: 1rem 4rem 6rem;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.partnership_hero_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.partnership_hero_nav_logo h3 {
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "Marcellus", sans-serif;
+}
+
+.partnership_hero_nav ul {
+  list-style: none;
+}
+
+.partnership_hero_nav ul li {
+  display: inline-block;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 20px;
+  padding-right: 1.8rem;
+}
+
+.partnership_hero_heading {
+  margin-top: 10rem;
+}
+
+.partnership_hero_heading h1 {
+  font-family: "Marcellus", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 130px;
+  line-height: 180px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
