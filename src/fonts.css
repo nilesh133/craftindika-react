@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "MADE-Mirage";
+    src: url("./fonts/MADE-Mirage-Thin.otf") format("truetype");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "MADE-Mirage";
+    src: url("./fonts/MADE-Mirage-Regular.otf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "MADE-Mirage";
+    src: url("./fonts/MADE-Mirage-Medium.otf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "MADE-Mirage";
+    src: url("./fonts/MADE-Mirage-Bold.otf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "MADE-Mirage";
+    src: url("./fonts/MADE-Mirage-Black.otf") format("truetype");
+    font-weight: 900;
+}

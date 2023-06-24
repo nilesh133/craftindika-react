@@ -13,6 +13,7 @@ import AboutUs from './components/AboutUs/AboutUs';
 import LandingPage from './components/LandingPage/LandingPage';
 import Partnership from './components/Partnership/Partnership';
 import Webinar from './components/Webinar/Webinar';
+import Blogs from './components/Partnership/Blogs';
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/disclaimer" exact element={<Disclaimer/>} />
           <Route path="/contact-us" exact element={<ContactUs/>} />
           <Route path="/about-us" exact element={<AboutUs/>} />
+          <Route path="/blog" exact element={<Blogs/>}/>
         </Routes>
       </div>
     </Router>
