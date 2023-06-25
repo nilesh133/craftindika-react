@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600&display=swap');
+@import '../../../fonts.css';
+
+.faq_section_search {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 3rem;
+  background: linear-gradient(to bottom right,#e5e5e5, #f7f7f7, #ffffff, #f7f7f7,#e5e5e5);
+}
+
+.faq-section {
+  text-align: center;
+  /* background: linear-gradient(to bottom right, #ffffff, #f7f7f7,#e5e5e5, #c5a567); */
+  padding: 20px 10px;
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* box-shadow: 0 0 7px rgba(0, 0, 0, 0.9); */
+}
+
+.faq-section p {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.20em;
+  text-transform: uppercase;
+  color: #c5a56f;
+}
+
+.faq-section h1 {
+  font-family: 'MADE-Mirage';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 45px;
+  line-height: 30px;
+  text-align: center;
+  color: #343935;
+  margin: 0;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  padding: 10px;
+  width: 450px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.search-bar {
+  flex-grow: 1;
+  font-family: "MADE-Mirage";
+  font-size: 15px;
+  padding: 0 10px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.search-bar::placeholder {
+  font-size: 15px;
+  font-family: "MADE-Mirage";
+}
+
+.button {
+  border: none;
+  color: #c5a567;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.button:hover {
+  color: #343935;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: #000;
+}
+
+.arrow img {
+  height: 25px;
+  width: 15px;
+}
+
+.left-arrow, .right-arrow {
+  align-items: center;
+  border-radius: 50%;
+  background-color: #c5a567;
+  padding: 0.7rem 1rem;  
+}
+
+.left-arrow:hover, .right-arrow:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.37);
+}
+
+.left-arrow {
+  margin-right: 10px;
+}
+
+.right-arrow {
+  margin-left: 10px;
+}
+
+.card-slider {
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.3s ease-in-out;
+  padding: 20px 2px;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  padding: 30px;  
+  background-color: #ffffff;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.37);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.37);
+}
+
+.card h3 {
+  font-family: "MADE-Mirage";
+  font-size: 23px;
+  font-weight: 400;
+  margin-top: 0;
+  color: #343935;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+  color: #343935;
+  letter-spacing: 0.02em;
+  word-spacing: 0.02em;
+  font-family: "Red Hat Display";
+}
+
+.popup-container {
+  display: flex;
+  align-items: center;
+}
+
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+
+.popup h3 {
+  font-family: "MADE-Mirage";
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 400;
+  margin-top: 0;
+  color: #343935;
+}
+
+.popup p {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 0;
+  color: #343935;
+  letter-spacing: 0.02em;
+  word-spacing: 0.02em;
+  font-family: "Red Hat Display";
+}
+
+.popup-open {
+  overflow: hidden;
+}
+
+.popup-open .arrow {
+  visibility: visible;
+}
+
+.popup button {
+  display: block;
+  margin-top: 20px;
+}
+
+.close_button {
+  font-family: 'Red Hat Display';
+  border: none;
+  border-radius: 20px;
+  padding: 0.1rem 1.5rem;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #343935;
+  color: #ffffff;
+  height: 40px;
+  margin: 0;
+  align-self: flex-end;
+  letter-spacing: 0.03em;
+}
+
+.close_button:hover {
+  background-color: #c5a567;
+  font-weight: 500;
+  box-shadow: 0px 4px 6px rgba(181, 165, 111, 0.7);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.popup-open .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(45deg, #05042d, #51432c, #000000);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+  padding: 10px 30px;
+  border-radius: 20px;
+  width: 800px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.37);
+}
+
+.left-content {
+  font-family: "MADE-Mirage";
+  flex-grow: 1;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.left-content h2 {
+  font-weight: 500;
+  font-size: 23px;
+}
+
+.left-content p {
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.right-content button {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px 20px;
+  background-color: #c5a567;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  font-family: "Red Hat Display";
+  font-size: 16px;
+  font-weight: 400;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.right-content button:hover {
+  background-color: #ffffff;
+  color: #343935;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .faq-section {
+    padding: 4rem 1rem;
+  }
+  .faq-section p {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .faq-section h1 {
+    font-size: 35px;
+    line-height: 1.2;
+  }
+
+  .search-container {
+    width: 80%;
+    max-width: 250px;
+  }
+
+  .card-slider {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 20px 0;
+    gap: 0;
+  }
+
+  .card-slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: 70%;
+    max-width: 180px;
+    height: 60vh;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+
+  .card h3 {
+    font-size: 35px;
+  }
+
+  .card p {
+    -webkit-line-clamp: 9;
+  }
+
+  .left-arrow, .right-arrow {
+    margin: 0;
+  }
+
+  .arrow-container .left-arrow, .arrow-container .right-arrow {
+    margin: 0 10px;
+  }
+
+  .popup {
+    width: 70%;
+    max-width: 280px;
+    max-height: 70vh;
+    overflow: auto;
+    scroll-behavior: smooth;
+  }
+
+  .popup::-webkit-scrollbar {
+    display: none;
+  }
+
+  .popup h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .popup p {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .box {
+    padding: 2rem;
+    height: auto;
+    width: 70%;
+    flex-direction: column;
+  }
+
+  .left-content {
+    flex-grow: unset;
+    text-align: center;
+  }
+
+  
+.left-content h2 {
+  font-weight: 400;
+  font-size: 43px;
+  line-height: 45px;
+}
+
+.left-content p {
+  font-weight: 100;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+  .right-content {
+    align-items: center;
+  }
+
+  .right-content button {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .faq-section {
+    padding: 4rem 1rem;
+  }
+  .faq-section p {
+    font-size: 22px;
+    line-height: 1;
+  }
+
+  .faq-section h1 {
+    font-size: 37px;
+    line-height: 1.2;
+  }
+
+  .search-container {
+    width: 80%;
+    max-width: 280px;
+  }
+
+  .card-slider {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 20px 0;
+    gap: 0;
+  }
+
+  .card-slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: 80%;
+    max-width: 240px;
+    height: 60vh;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+
+  .card h3 {
+    font-size: 35px;
+  }
+
+  .card p {
+    -webkit-line-clamp: 9;
+  }
+
+  .left-arrow, .right-arrow {
+    margin: 0;
+  }
+
+  .arrow-container .left-arrow, .arrow-container .right-arrow {
+    margin: 0 10px;
+  }
+
+  .popup {
+    width: 70%;
+    max-width: 280px;
+    max-height: 70vh;
+    overflow: auto;
+    scroll-behavior: smooth;
+  }
+
+  .popup::-webkit-scrollbar {
+    display: none;
+  }
+
+  .popup h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .popup p {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .box {
+    padding: 2rem;
+    height: auto;
+    width: 70%;
+    flex-direction: column;
+  }
+
+  .left-content {
+    flex-grow: unset;
+    text-align: center;
+  }
+
+  
+.left-content h2 {
+  font-weight: 400;
+  font-size: 43px;
+  line-height: 45px;
+}
+
+.left-content p {
+  font-weight: 100;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+  .right-content {
+    align-items: center;
+  }
+
+  .right-content button {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .faq-section {
+    padding: 4rem 1rem;
+  }
+  .faq-section p {
+    font-size: 22px;
+    line-height: 1;
+  }
+
+  .faq-section h1 {
+    font-size: 37px;
+    line-height: 1.2;
+  }
+
+  .search-container {
+    width: 100%;
+    max-width: 380px;
+  }
+
+  .card-slider {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 20px 0;
+    gap: 0;
+  }
+
+  .card-slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: 80%;
+    max-width: 340px;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+
+  .left-arrow, .right-arrow {
+    margin: 0;
+  }
+
+  .arrow-container .left-arrow, .arrow-container .right-arrow {
+    margin: 0 10px;
+  }
+
+  .popup {
+    width: 90%;
+    overflow: auto;
+    scroll-behavior: smooth;
+  }
+
+  .popup::-webkit-scrollbar {
+    display: none;
+  }
+
+  .popup h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .popup p {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .box {
+    width: 80%;
+  }
+  
+  .left-content {
+    justify-content: flex-start;
+  }
+
+  .right-content {
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {  
+  .card-slider {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  .card-slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    scroll-snap-align: center;
+    flex-shrink: 0;
+  }
+}
+

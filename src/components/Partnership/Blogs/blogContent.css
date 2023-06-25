@@ -1,0 +1,55 @@
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .section {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .section p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  
+  .introduction {
+    margin-bottom: 20px;
+  }
+  
+  .conclusion {
+    background-color: #eaf2ff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .conclusion h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .conclusion p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  
