@@ -10,6 +10,7 @@ import hero_main_image from "../../../images/LandingPage/Hero/hero_main_image.pn
 const Hero = () => {
     const [showNavLinks, setShowNavLinks] = useState(false);
     const [hamburgerType, setHamburgerType] = useState(false);
+    const [states, setStates] = useState(false);
 
     const toggleNavLinks = () => {
         setShowNavLinks(!showNavLinks);
