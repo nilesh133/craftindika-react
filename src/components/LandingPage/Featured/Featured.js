@@ -55,7 +55,7 @@ const Featured = () => {
             <div className='featured_carousel'>
                 <Swiper
                     slidesPerView={windowWidth <= 600 ? 1 : 2}
-                    spaceBetween={30}
+                    spaceBetween={60}
                     navigation={true}
                     pagination={{
                         clickable: true,
@@ -68,7 +68,7 @@ const Featured = () => {
                             <div className='featured_carousel_single'>
                                 <img src={featured_image1} />
                                 <div className='featured_carousel_single_info'>
-                                    <h2>Mesmeric Arts.</h2>
+                                    <h2>Mesmeric Arts</h2>
                                     <h3><span>over </span> 100 styles</h3>
                                     <p>Brushstrokes of a Rich Culture.</p>
                                 </div>
@@ -80,7 +80,7 @@ const Featured = () => {
                             <div className='featured_carousel_single'>
                                 <img src={featured_image2} />
                                 <div className='featured_carousel_single_info'>
-                                    <h2>Exquisite Handicrafts.</h2>
+                                    <h2>Exquisite Handicrafts</h2>
                                     <h3><span>over </span> 500 types</h3>
                                     <p>Crafted with Love, Shaped by Tradition.</p>
                                 </div>
@@ -92,7 +92,7 @@ const Featured = () => {
                             <div className='featured_carousel_single'>
                                 <img src={featured_image3} />
                                 <div className='featured_carousel_single_info'>
-                                    <h2>Intricate Handlooms.</h2>
+                                    <h2>Intricate Handlooms</h2>
                                     <h3><span>over </span> 70 Kinds</h3>
                                     <p>India's Heritage Thread by Thread.</p>
                                 </div>

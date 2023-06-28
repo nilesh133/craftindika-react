@@ -2,8 +2,8 @@ import React from 'react';
 import "./process.css";
 
 // Images import
-import process_image1 from "../../../images/LandingPage/Process/process_image1.png";
-import process_image2 from "../../../images/LandingPage/Process/process_image2.png";
+import process_image1 from "../../../images/LandingPage/Process/process_image1.webp";
+import process_image2 from "../../../images/LandingPage/Process/process_image2.webp";
 
 const Process = () => {
   return (

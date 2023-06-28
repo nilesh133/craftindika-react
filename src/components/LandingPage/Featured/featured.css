@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600&display=swap');
+@import '../../../fonts.css';
+
 .featured {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 6rem 4rem;
   background-color: rgba(52, 57, 53, 1);
   height: auto;
@@ -11,15 +15,16 @@
 
 .featured_header {
   display: flex;
-  justify-content: space-around;
-  /* align-items: center; */
+  justify-content: space-between;
+  align-items: space-between;
+  gap: 17rem;
 }
 
 .featured_header_left p {
   font-family: "Red Hat Display";
   font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
+  font-weight: 100;
+  font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -28,11 +33,12 @@
 }
 
 .featured_header_left h3 {
-  font-family: "MADE Mirage", sans-serif;
+  font-family: "MADE-Mirage";
   font-style: normal;
   font-weight: 100;
-  font-size: 50px;
-  line-height: 80px;
+  font-size: 40px;
+  line-height: 50px;
+  opacity: 0.9;
   color: #ffffff;
   margin: 0;
 }
@@ -46,9 +52,10 @@
 .featured_header_right p {
   font-family: "Red Hat Display";
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
   color: #ffffff;
   margin: 0;
 }
@@ -57,11 +64,11 @@
   position: relative;
   font-family: "Red Hat Display";
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 20px;
   text-align: center;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.01em;
   color: #fff;
   text-decoration: none;
   width: fit-content;
@@ -81,7 +88,7 @@
 .featured_carousel {
   margin-top: 6rem;
   position: relative;
-  width: 100%;
+  width: 85%;
   display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,29 +104,36 @@
 .featured_carousel_single {
   display: flex;
   flex-direction: column;
-  width: 480px;
+  width: 400px;
   position: relative;
+  border-style: solid;
+  border-width: 3px;
+  border-image: linear-gradient(180deg, #c5a56f 0%, rgba(197, 165, 111, 0) 100%)
+    1;
   /* height: 300px; */
 }
 
 .featured_carousel_single img {
   width: 100%;
-  height: 400px;
-  object-fit: cover;
-  position: relative;
+  height: 300px;
+  object-fit: fill;
+  background-color: #000;
+  position: relative;  
+  box-sizing: border-box;
 }
 
 .featured_carousel_single_info {
   padding: 2rem;
+  padding-top: 1rem;
   background-color: #fff;
   text-align: left;
 }
 
 .featured_carousel_single_info h2 {
-  font-family: "MADE Mirage", sans-serif;
+  font-family: "MADE-Mirage";
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 52px;
   color: #343935;
   margin: 0;
@@ -129,20 +143,20 @@
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 30px;
   display: flex;
-  align-items: flex-end;
+  align-self: flex-end;
   color: #343935;
   margin-right: 0.5rem;
 }
 
 .featured_carousel_single_info h3 {
-  font-family: "MADE Mirage", sans-serif;
+  font-family: "MADE-Mirage";
   font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 51px;
+  font-weight: 100;
+  font-size: 30px;
+  line-height: 41px;
   display: flex;
   align-items: center;
   color: #c5a56f;
@@ -155,9 +169,11 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  letter-spacing: 0.03em;
   color: #343935;
   margin: 0;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
+  bottom: 0;
 }
 
 .featured .swiper {
@@ -216,10 +232,10 @@
   }
 
   @media (max-width: 1300px) {
-    .featured {
+    /* .featured {
       padding: 4rem;
-    }
-  
+    } */
+/*   
     .featured_header_left h3 {
       font-size: 36px;
       line-height: 60px;
@@ -233,21 +249,21 @@
     .featured_header_right a {
       font-size: 14px;
       line-height: 18px;
-    }
+    } */
   
     .featured_carousel {
       margin-top: 4rem;
     }
   
-    .featured_carousel_single {
+    /* .featured_carousel_single {
       width: 100%;
-    }
-  
-    /* .featured_carousel_single img {
-      width: 100%;
-      height: auto;
     } */
   
+    .featured_carousel_single img {
+      width: 100%;
+      /* height: auto; */
+    }
+/*   
     .featured_carousel_single_info h2 {
       font-size: 32px;
       line-height: 42px;
@@ -265,7 +281,7 @@
     .featured_carousel_single_info p {
       font-size: 12px;
       line-height: 18px;
-    }
+    } */
   
     .featured .swiper {
       width: 100%;

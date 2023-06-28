@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600&display=swap');
+@import '../../fonts.css';
+
 .faqcomponent {
   display: flex;
   justify-content: center;
@@ -10,11 +13,11 @@
 }
 
 .faqcomponent_left h3 {
-  font-family: "MADE Mirage", sans-serif;
+  font-family: "MADE-Mirage";
   font-style: normal;
   font-weight: 100;
   font-size: 44px;
-  line-height: 80px;
+  line-height: 50px;
   color: #343935;
   margin: 0;
 }
@@ -33,11 +36,11 @@
 }
 
 .faqcomponent_right .MuiAccordionSummary-content p {
-  font-family: "Marcellus";
+  font-family: "MADE-Mirage";
   font-style: normal;
   font-weight: 400;
-  font-size: 48px;
-  line-height: 61px;
+  font-size: 28px;
+  line-height: 35px;
   color: #c5a56f;
   text-align: center;
 }

@@ -1,12 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600&display=swap');
+@import '../../../fonts.css';
+
 .artisanal {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6rem 4rem;
+  padding: 5rem 4rem;
 }
 
 .artisanal_flower_image {
   margin-bottom: 2rem;
+}
+
+.artisanal_flower_image img {
+  width: 70%;
+  height: 70%;
 }
 
 .artisanal_heading {
@@ -14,19 +22,20 @@
 }
 
 .artisanal_heading h1 {
-  font-family: "MADE Mirage", sans-serif;
+  font-family: "MADE-Mirage";
   font-style: normal;
-  font-weight: 100;
-  font-size: 51px;
-  line-height: 65px;
+  font-weight: 200;
+  font-size: 44px;
+  line-height: 55px;
   text-align: center;
   color: #343935;
   margin: 0;
 }
 
 .artisanal_heading h1 span {
-  font-family: "Meow Script", sans-serif;
+  font-family: "Meow Script";
   color: rgba(197, 165, 111, 1);
+  font-size: 52px;
 }
 
 .artisanal_image {
@@ -36,21 +45,21 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 578px;
-  height: 268px;
-  margin-top: -6rem;
+  width: 500px;
+  height: 230px;
+  margin-top: -4rem;
 }
 
 .artisanal_image img {
   position: absolute;
   width: 80%;
-  height: 90%;
+  height: 130%;
   object-fit: contain;
-  padding-top: 3rem;
+  padding-top: 0;
 }
 
 .artisanal_present {
-  padding-top: 3rem;
+  padding-top: 1.5rem;
 }
 
 .artisanal_present p {
@@ -58,8 +67,8 @@
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 23px;
   text-align: center;
   color: #343935;
   opacity: 0.75;
@@ -75,7 +84,7 @@
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 20px;
   text-align: center;
   letter-spacing: -0.01em;
@@ -89,8 +98,8 @@
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 120%;
-  height: 2px;
+  width: 110%;
+  height: 1.5px;
   background-color: #343935;
 }
 

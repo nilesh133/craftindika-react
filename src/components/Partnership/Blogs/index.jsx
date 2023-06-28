@@ -12,7 +12,7 @@ const Blogs = () => {
     <div>
       {/* navabar */}
       <BlogHero heroImg = {state.heroImg} heading = {state.heading}/>
-      <BlogContent/>
+      <BlogContent title = {state.title} introduction = {state.introduction} caseStudy = {state.caseStudy} conclusion = {state.conclusion}/>
       <Footer/>
     </div>
   );

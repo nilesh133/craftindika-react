@@ -6,7 +6,7 @@ const Certified = () => {
     return (
         <div className='certified'>
             <div className='certified_content'>
-                <h3>CraftIndika Certified</h3>
+                <h3>CraftIndika Certified ©</h3>
                 <div>
                     <p>CraftIndika prides itself on being India's premier institution, ensuring product authentication and ownership for an</p>
                     <p>array of art and handicraft items via our dedicated Ownership Module.</p>
