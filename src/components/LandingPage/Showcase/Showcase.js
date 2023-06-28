@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import "./showcase.css"
 
 // Images import
-import showcase_image1 from "../../../images/LandingPage/Showcase/showcase_image1.png";
-import showcase_image2 from "../../../images/LandingPage/Showcase/showcase_image2.png";
-import showcase_image3 from "../../../images/LandingPage/Showcase/showcase_image3.png";
+import showcase_image1 from "../../../images/LandingPage/Showcase/showcase_image1.webp";
+import showcase_image2 from "../../../images/LandingPage/Showcase/showcase_image2.webp";
+import showcase_image3 from "../../../images/LandingPage/Showcase/showcase_image3.webp";
 
 // Swiper import
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -49,7 +49,7 @@ const Showcase = () => {
             <div className='showcase_carousel'>
                 <Swiper
                     slidesPerView={(windowWidth >= 700 && windowWidth <= 1082) ? 2 : (windowWidth >= 1082 ? 3 : 1) }
-                    spaceBetween={30}
+                    spaceBetween={17}
                     navigation={true}
                     pagination={{
                         clickable: true,

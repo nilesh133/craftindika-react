@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600&display=swap');
+@import '../../../fonts.css';
+
 .embark {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 6rem 10rem;
+  padding: 6rem 8rem;
 }
 
 .embark_content {
@@ -13,13 +16,13 @@
 .embark_content_left {
   position: relative;
   width: 55%;
-  height: 452px;
+  height: 362px;
 }
 
 .embark_content_left img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .embark_content_right {
@@ -28,31 +31,33 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding: 80px; */
-  gap: 24px;
-  height: 452px;
+  padding: 4rem 2rem;
+  gap: 14px;
+  height: 362px;
   box-sizing: border-box;
   width: 45%;
 }
 
 .embark_content_right_heading h3 {
-  font-family: "MADE Mirage", sans-serif;
+  font-family: "MADE-Mirage";
   font-style: normal;
   font-weight: 400;
-  font-size: 35px;
-  /* line-height: 52px; */
+  font-size: 30px;
+  line-height: 35px;
   color: #c8b5a3;
   margin: 0;
+  letter-spacing: 0.05em;
 }
 
 .embark_content_right_paras p {
   font-family: "Red Hat Display";
   font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  /* line-height: 52px; */
+  font-weight: 100;
+  font-size: 13px;
+  line-height: 22px;
   color: #fff;
   margin: 0;
+  letter-spacing: 0.03em;
 }
 
 .embark_content_right_input {
@@ -60,18 +65,20 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 6px 8px 6px 24px;
+  padding: 4px 6px 4px 15px;
   gap: 8px;
   border: 1px solid #ffffff;
   border-radius: 4rem;
-  /* width: 100%; */
+  opacity: 0.8;
+  width: 80%;
 }
 
 .embark_content_right_input_shop {
   display: flex;
   align-items: center;
-  padding: 14px 18px;
-  gap: 32px;
+  justify-content: center;
+  padding: 9px 12px;
+  gap: 30px;
   width: fit-content;
   border: 1px solid #ffffff;
   border-radius: 4rem;
@@ -80,22 +87,35 @@
 }
 
 .embark_content_right_input input {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    color: #fff;
-    font-size: 1rem;
-    font-family: "Red Hat Display", sans-serif;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 0.8rem;
+  font-family: "Red Hat Display";
 }
 
 .embark_content_right_input input::placeholder {
-    font-family: "Red Hat Display", sans-serif;
-    font-size: 1rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 100;
+  color: #fff;
+  opacity: 0.7;
+  letter-spacing: 0.01em;
 }
 
 .embark_content_right_input_shop p{
-    font-family: "Red Hat Display", sans-serif;
-    margin: 0;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.embark_content_right_input_shop span {
+font-size: 0.8rem;
+font-weight: 400;
 }
 
 @media screen and (max-width: 1252px) {

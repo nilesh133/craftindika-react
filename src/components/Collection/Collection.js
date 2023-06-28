@@ -7,6 +7,7 @@ import collection_image2 from "../../images/LandingPage/Collection/collection_im
 import collection_image3 from "../../images/LandingPage/Collection/collection_image3.png";
 import collection_image4 from "../../images/LandingPage/Collection/collection_image4.png";
 import collection_image5 from "../../images/LandingPage/Collection/collection_image5.png";
+import next_arrow from "../../images/LandingPage/Collection/next-arrow.png";
 import collection_amazon from "../../images/LandingPage/Collection/collection_amazon.png";
 import collection_etsy from "../../images/LandingPage/Collection/collection_etsy.png";
 import collection_craftindika from "../../images/LandingPage/Collection/collection_craftindika.png";
@@ -15,7 +16,7 @@ const Collection = () => {
     return (
         <div className='collection'>
             <div className='collection_heading'>
-                <p>COLLECTION</p>
+                <p>Collection</p>
                 <h3>Our Artisanal Showcase</h3>
             </div>
             <div className='collection_content'>
@@ -52,12 +53,16 @@ const Collection = () => {
                     <p>Where ancient cultural heritage blends with unique, earthy designs to create truly enchanting adornments.</p>
                     <a href="#">Explore</a>
                 </div>
+                <div className='collection_content_box'>
+                    <img className='next' src={next_arrow} />
+                    <h3>Explore All</h3>
+                </div>
             </div>
             <div className='collection_featured'>
                 <h1>We are featured on</h1>
-                <img src = {collection_craftindika} style={{width: "270px"}}/>
                 <img src={collection_amazon} />
-                <img src={collection_etsy} style={{width: "125px"}}/>
+                <img src={collection_etsy} />
+                <img src={collection_craftindika} />
             </div>
         </div>
     )

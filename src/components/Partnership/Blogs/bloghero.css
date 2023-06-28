@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Red+Hat+Display:wght@300;400;500;600&display=swap');
+@import '../../../fonts.css';
+
+.partnership_hero {
+  background: url("../../../images/Partnership/Hero/partnership_hero_main_image.webp");
+  padding: 0.5rem 3rem 8rem 3rem;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.partnership_hero.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.partnership_hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.partnership_hero_nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.partnership_hero_nav_logo h3 {
+  font-family: 'MADE-Mirage';
+  position: relative;
+  font-size: 22px;
+  font-weight: 100;
+  letter-spacing: 0.02em;
+  margin-left: 40px;
+  z-index: 2;
+}
+
+.partnership_hero_nav ul {
+  list-style: none;
+}
+
+.partnership_hero_nav ul li {
+  display: inline-block;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 13px;
+  padding-right: 1.8rem;
+  letter-spacing: 0.09em;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.partnership_hero_nav .menu_items li:before {
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+.partnership_hero_nav .menu_items li:hover:before {
+  width: 70%;
+}
+
+.partnership_hero_heading {
+  margin-top: 11rem;
+  margin-bottom: 1rem;
+}
+
+.partnership_hero_heading h1 {
+  font-family: 'MADE-Mirage';
+  font-weight: 100;
+  position: relative;
+  font-style: normal;
+  font-size: 120px;
+  line-height: 120px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  z-index: 2;
+}
+
+.partnership_hero_heading span {
+  font-size: 25px;
+  font-weight: 400;
+  vertical-align: super;
+}
+
+.menu-button {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .partnership_hero {
+    padding: 20px;
+    height: 550px;
+  }
+
+  .partnership_hero_nav .menu_items li:before {
+    display: none;
+  }
+
+  .partnership_hero_heading h1 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .partnership_hero_heading span {
+    font-size: 14px;
+  }
+
+  .partnership_hero_nav_logo h3 {
+    font-size: 20px;
+    margin-left: 3px;
+  }
+
+  .menu_button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 20px;
+    height: 10px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .menu_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+
+  .menu_icon span {
+    height: 2px;
+    width: 23px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+  }
+
+  .menu_icon span:nth-child(1) {
+    top: 0;
+  }
+
+  .menu_icon span:nth-child(2),
+  .menu_icon span:nth-child(3) {
+    top: 8px;
+  }
+
+  .menu_icon span:nth-child(4) {
+    top: 16px;
+  }
+
+  .open .menu_icon span:nth-child(1) {
+    top: 8px;
+    width: 0%;
+    left: 50%;
+  }
+
+  .open .menu_icon span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+
+  .open .menu_icon span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  .open .menu_icon span:nth-child(4) {
+    top: 8px;
+    width: 0%;
+    left: 50%;
+  }
+
+  .menu_items {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: auto;
+    right: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .open .menu_items {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .menu_items li {
+    padding: 0.4rem;
+    text-align: end;
+  }
+
+  .partnership_hero_nav ul li {
+    font-size: 11px;
+    padding-right: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 576px) {
+  .partnership_hero_nav .menu_items li:before {
+    display: none;
+  }
+
+  .partnership_hero_heading h1 {
+    font-size: 65px;
+    line-height: 58px;
+  }
+
+  .partnership_hero_heading span {
+    font-size: 20px;
+  }
+
+  .partnership_hero_nav_logo h3 {
+    font-size: 25px;
+    margin-left: 15px;
+  }
+
+  .menu_button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 20px;
+    height: 10px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .menu_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+
+  .menu_icon span {
+    width: 100%;
+    height: 1px;
+    width: 27px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+  }
+
+  .menu_icon span:nth-child(1) {
+    top: 0;
+  }
+
+  .menu_icon span:nth-child(2),
+  .menu_icon span:nth-child(3) {
+    top: 8px;
+  }
+
+  .menu_icon span:nth-child(4) {
+    top: 16px;
+  }
+
+  .open .menu_icon span:nth-child(1) {
+    top: 8px;
+    width: 0%;
+    left: 50%;
+  }
+
+  .open .menu_icon span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+
+  .open .menu_icon span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  .open .menu_icon span:nth-child(4) {
+    top: 8px;
+    width: 0%;
+    left: 50%;
+  }
+
+  .menu_items {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: auto;
+    right: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .open .menu_items {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .menu_items li {
+    padding: 0.4rem;
+    text-align: end;
+  }
+
+  .partnership_hero_nav ul li {
+    font-size: 11px;
+    padding-right: 1.5rem;
+  }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .partnership_hero_nav .menu_items li:before {
+    display: none;
+  }
+
+  .partnership_hero_heading h1 {
+    font-size: 75px;
+    line-height: 68px;
+  }
+
+  .partnership_hero_heading span {
+    font-size: 25px;
+  }
+
+  .partnership_hero_nav_logo h3 {
+    font-size: 27px;
+    margin-left: 14px;
+  }
+
+  .menu_button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 20px;
+    height: 10px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .menu_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+
+  .menu_icon span {
+    width: 100%;
+    height: 2px;
+    width: 29px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+  }
+
+  .menu_items {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: auto;
+    right: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .open .menu_items {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .menu_items li {
+    padding: 0.4rem;
+    text-align: end;
+  }
+
+  .partnership_hero_nav ul li {
+    font-size: 11px;
+    padding-right: 1.5rem;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .partnership_hero_nav ul li {
+    font-size: 10px;
+    padding-right: 1.5rem;
+  }
+
+  .partnership_hero_heading h1 {
+    font-size: 100px;
+    line-height: 100px;
+  }
+
+  .partnership_hero_heading span {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .partnership_hero_nav_logo h3 {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+
+  .partnership_hero_nav ul li {
+    font-size: 13px;
+    padding-right: 1.8rem;
+  }
+
+  .partnership_hero_heading h1 {
+    font-size: 110px;
+    line-height: 110px;
+  }
+
+  .partnership_hero_heading span {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .partnership_hero_nav_logo h3 {
+    font-size: 22px;
+    margin-left: 40px;
+  }
+
+  .partnership_hero_nav ul li {
+    font-size: 13px;
+    padding-right: 1.8rem;
+  }
+
+  .partnership_hero_heading h1 {
+    font-size: 120px;
+    line-height: 120px;
+  }
+
+  .partnership_hero_heading span {
+    font-size: 25px;
+  }
+}
