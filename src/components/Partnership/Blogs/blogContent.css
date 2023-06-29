@@ -1,55 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600&display=swap');
+@import '../../../fonts.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  transition: all 0.3 linear;
+}
+
 .container {
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .section {
-    background-color: #f7f7f7;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .section h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .section p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 0;
-  }
-  
-  .introduction {
-    margin-bottom: 20px;
-  }
-  
-  .conclusion {
-    background-color: #eaf2ff;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .conclusion h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .conclusion p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 0;
-  }
-  
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 7rem;
+}
+
+.title{
+  font-family: "MADE-Mirage";
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 400;
+  margin-top: 0;
+  color: #343935;
+  margin-bottom: 20px;
+}
+
+.introduction {
+  margin-bottom: 30px;
+}
+
+.introduction p {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 0;
+  color: #343935;
+  letter-spacing: 0.02em;
+  word-spacing: 0.02em;
+  font-family: "Red Hat Display";
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.case-study-card {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.case-study-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.case-study-card h2 {
+  font-family: "MADE-Mirage";
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 400;
+  margin-top: 0;
+  color: #343935;
+}
+
+.case-study-card p {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 0;
+  color: #343935;
+  letter-spacing: 0.02em;
+  word-spacing: 0.02em;
+  font-family: "Red Hat Display";
+}
+
+.case-study-card a {
+  font-size: 18px;
+  font-family: "Red Hat Display";
+  color: #c5a567;
+}
+
+.conclusion {
+  margin-bottom: 30px;
+}
+
+.conclusion h2 {
+  font-family: "MADE-Mirage";
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 400;
+  margin-top: 0;
+  color: #343935;
+}
+
+.conclusion p {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 0;
+  color: #343935;
+  letter-spacing: 0.02em;
+  word-spacing: 0.02em;
+  font-family: "Red Hat Display";
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+
+.popup-content h2 {
+  font-family: "MADE-Mirage";
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #343935;
+}
+
+.popup-content p {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 0;
+  color: #343935;
+  letter-spacing: 0.02em;
+  word-spacing: 0.02em;
+  font-family: "Red Hat Display";
+}
+
+.popup-content .popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #555;
+}
+
+.random-images {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.random-image {
+  max-width: 300px;
+  height: auto;
+  margin: 0 10px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9998;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s linear;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+

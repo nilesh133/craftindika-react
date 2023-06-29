@@ -2,14 +2,14 @@
 @import '../../../fonts.css';
 
 .partnership_hero {
-  background: url("../../../images/Partnership/Hero/partnership_hero_main_image.webp");
   padding: 0.5rem 3rem 8rem 3rem;
   background-position: center;
-  background-size: cover;
+  background-size: fill;
   position: relative;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  height: 110vh;
 }
 
 .partnership_hero.show {
@@ -24,7 +24,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 
@@ -84,6 +84,7 @@
 .partnership_hero_heading h1 {
   font-family: 'MADE-Mirage';
   font-weight: 100;
+  word-spacing: 0.03em;
   position: relative;
   font-style: normal;
   font-size: 120px;
@@ -92,12 +93,6 @@
   color: #ffffff;
   margin: 0;
   z-index: 2;
-}
-
-.partnership_hero_heading span {
-  font-size: 25px;
-  font-weight: 400;
-  vertical-align: super;
 }
 
 .menu-button {
