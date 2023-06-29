@@ -1,14 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600&display=swap');
-@import '../../../fonts.css';
-
 .helps {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem 8rem;
-  padding-top: 9rem;
-  background-image: url("../../../images/Partnership//Helps/helps_main_image.webp");
+  padding: 10rem 4rem;
+  background-image: url("../../../images/Partnership//Helps/helps_main_image.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -18,203 +14,88 @@
   justify-content: center;
   align-items: center;
   z-index: 100;
-  transform: translateX(90px);
-  
-}
-
-.helps_heading_box {
-  width: 353px;
-  height: 244px;
-  background-color: rgba(197, 165, 111, 1);
-  /* transform: translateX(150px); */
-  border-radius: 15px;
-  transform: translateY(-50px);
-  z-index: -100;
-}
-
-.helps_heading h3 {
-  font-family: 'MADE-Mirage';
-  font-style: normal;
-  font-weight: 100;
-  font-size: 44px;
-  line-height: 50px;
-  letter-spacing: 0.05em;
-  color: #ffffff;
-  margin: 0;
-  transform: translateX(-165px);
-}
-
-.helps_paras {
-  margin-top: 1rem;
+  width: 90%;
   position: relative;
 }
 
-.helps_paras p {
-  font-family: 'Red Hat Display';
+.helps_heading_box {
+  width: 513px;
+  height: 361px;
+  background-color: rgba(197, 165, 111, 1);
+  transform: translateX(180px);
+  z-index: -100;
+  margin-top: -6rem;
+  /* margin-left: 6rem; */
+}
+
+.helps_heading h3 {
+  font-family: "Marcellus";
   font-style: normal;
   font-weight: 100;
-  font-size: 16px;
-  letter-spacing: 0.05em;
-  line-height: 25px;
-  text-align: center;
+  font-size: 50px;
+  line-height: 80px;
   color: #ffffff;
-  opacity: 0.8;
   margin: 0;
-  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.helps_paras img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(130%, -110%);
-  height: 90px;
-  width: 90px;
+.helps_paras {
+  margin-top: 6rem;
 }
 
-.helps_link a {
+.helps_paras p {
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 19px;
-  line-height: 60px;
+  font-size: 16px;
+  line-height: 30px;
   text-align: center;
-  letter-spacing: 0.02em;
   color: #ffffff;
+  opacity: 0.75;
+  margin: 0;
+}
+
+.helps_link {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  text-decoration: underline;
+  margin-top: 6rem;
   cursor: pointer;
-  opacity: 0.8;
-  text-decoration: none;
 }
 
-@media only screen and (max-width: 480px) {
+
+@media (max-width: 1100px) {
   .helps {
-    padding: 2rem;
-    padding-top: 7rem;
+    padding: 4rem 2rem;
   }
-  
+
   .helps_heading {
-    transform: translateX(-15px);
-    text-align: left;
+    width: 95%;
+    flex-direction: column;
+    align-items: baseline;
   }
 
-  .helps_heading_box {
-    width: 195px;
-    height: 110px;
-    transform: translate(56px, -90px);
-  }  
-    
   .helps_heading h3 {
-    font-size: 26px;
-    line-height: 34px;
-    transform: translateX(-20px);
-  }
-
-  .helps_paras {
-    text-align: justify;
-  }
-
-  .helps_paras p {
-    display: inline;
-    font-size: 18px;
-    line-height: 25px;
-    word-spacing: 0.01em;
-  }
-  
-  .helps_paras img {
-    display: none;
-  }
-
-  .helps_link a {
-    font-size: 20px;
-  }
-}
-
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-  .helps {
-    padding: 4rem;
-    padding-top: 9rem;
-  }
-  
-  .helps_heading {
-    transform: translateX(90px);
-  }
-
-  .helps_heading_box {
-    width: 210px;
-    height: 120px;
-    transform: translateY(-105px);
-  }
-    
-  .helps_heading h3 {
-    font-size: 41px;
-    line-height: 47px;
     text-align: center;
-    transform: translateX(-160px);
-  }
-
-  .helps_paras p {
-    display: flex;
-    font-size: 20px;
-    line-height: 25px;
-  }
-  
-  .helps_paras img {
-    display: none;
-  }
-
-  .helps_link a {
-    font-size: 20px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .helps {
-    padding: 4rem;
-    padding-top: 8rem;
-  }
-  
-  .helps_heading {
-    transform: translateX(50px);
-  }
-  
-  .helps_heading_box {
-    width: 320px;
-    height: 220px;
-    background-color: rgba(197, 165, 111, 1);
-    transform: translateY(-45px);
-    z-index: -100;
-  }
-  
-  .helps_heading h3 {
-    font-size: 36px;
-    line-height: 42px;
-    transform: translateX(-145px);
-  }
-  
-  .helps_paras img {
-    transform: translate(75%, -130%);
-    height: 75px;
-    width: 75px;
-  }
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1366px) {
-  .helps {
-    padding: 5rem;
-    padding-top: 9rem;
-  }
-
-  .helps_heading {
-    transform: translateX(70px);
+    line-height: 50px;
   }
 
   .helps_heading_box {
-    transform: translateY(-50px);
+   width: 132px;
+   height: 126px;
+   /* margin-right: 8rem; */
+   transform: translateY(90px);
   }
+}
 
+@media (max-width: 600px) {
   .helps_heading h3 {
-    font-size: 37px;
-    transform: translateX(-135px);
+    font-size: 40px;
   }
 
   .helps_heading h3:nth-child(2) {

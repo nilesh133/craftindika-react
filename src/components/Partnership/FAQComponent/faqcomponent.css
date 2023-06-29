@@ -617,8 +617,8 @@
     flex-shrink: 0;
     margin-right: 1rem;
     margin-left: 1rem;
-    width: 80%;
-    max-width: 340px;
+    width: 40%;
+    /* max-width: 340px; */
   }
 
   .card:hover {
@@ -670,6 +670,7 @@
   .card-slider {
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    justify-content: center;
   }
 
   .card-slider::-webkit-scrollbar {
@@ -679,6 +680,7 @@
   .card {
     scroll-snap-align: center;
     flex-shrink: 0;
+    width: 25%;
   }
 }
 
