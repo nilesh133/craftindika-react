@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './bloghero.css';
 
-const BlogHero = ({ heroImg }) => {
-  console.log(heroImg)
+const BlogHero = ({heroImg, heroHeading}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
@@ -19,7 +18,7 @@ const BlogHero = ({ heroImg }) => {
     <div
       className={`partnership_hero ${showContent ? 'show' : ''}`}
       style={{
-        background: `url(${heroImg})`,
+        backgroundImage: `url(${heroImg})`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
       }}
@@ -60,9 +59,8 @@ const BlogHero = ({ heroImg }) => {
       </nav>
       <div className={`partnership_hero_heading ${showContent ? 'show' : ''}`}>
         <h1>
-          CraftPartner<span> ©</span>
+        {heroHeading}
         </h1>
-        <h1>Program</h1>
       </div>
     </div>
   );

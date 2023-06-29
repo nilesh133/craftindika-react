@@ -4,10 +4,7 @@ import { FaQuoteLeft } from "react-icons/fa";
 import Zoom from "react-reveal/Zoom";
 import { useNavigate } from "react-router-dom";
 
-// import BlogImg1 from "../../../images/Partnership/Blog/blog1.png";
-// import BlogImg2 from "../../../images/Partnership/Blog/blog1.png";
-// import BlogImg3 from "../../../images/Partnership/Blog/blog1.png";
-// import BlogImg4 from "../../../images/Partnership/Blog/blog1.png";
+
 
 const News = () => {
   const [currNews, setCurrNews] = useState(0);
@@ -41,7 +38,7 @@ const News = () => {
   }, [currNews]);
 
   const handleBlogClick = () => {
-    navigate("/blog", { state: newsData[currNews] });
+    navigate(`/partnership/blog?q=${currNews+1}`);
   };
 
   return (
