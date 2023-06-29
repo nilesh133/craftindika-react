@@ -39,15 +39,15 @@ const BlogContent = ({ data }) => {
   };
 
   return (
-    <div className="container">
-      <div className={`overlay ${isPopupOpen ? 'active' : ''}`} onClick={closePopup} />
+    <div className="blogContainer">
+      <div className={`blogOverlay ${isPopupOpen ? 'active' : ''}`} onClick={closePopup} />
       <div>
-        <h1 className="title">{data.title}</h1>
-        <div className="introduction">
+        <h1 className="blogTitle">{data.title}</h1>
+        <div className="blogIntroduction">
           <p>{data.introduction}</p>
         </div>
         {data.caseStudy && (
-          <div className="section">
+          <div className="blogSection">
             {data.caseStudy.map((caseStudyItem, caseIndex) => (
               <div
                 key={caseIndex}
@@ -65,7 +65,7 @@ const BlogContent = ({ data }) => {
           </div>
         )}
         {data.conclusion && (
-          <div className="conclusion">
+          <div className="blogConclusion">
             {data.conclusion.map((conclusionItem, conclusionIndex) => (
               <div key={conclusionIndex}>
                 <h2>{conclusionItem.heading}</h2>
@@ -88,9 +88,9 @@ const BlogContent = ({ data }) => {
         )}
       </div>
       {popupContent && (
-        <div className="popup">
+        <div className="blogPopup">
           <div className="popup-content">
-            <div onClick={closePopup} className="popup-close">
+            <div onClick={closePopup} className="blogPopup-close">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
