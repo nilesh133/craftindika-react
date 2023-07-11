@@ -14,6 +14,8 @@ import LandingPage from './components/LandingPage/LandingPage';
 import Partnership from './components/Partnership/Partnership';
 import Webinar from './components/Webinar/Webinar';
 import Blogs from './components/Partnership/Blogs';
+import LandingPageBlogs from './components/LandingPage/LandingPageBlogs';
+import MainBlog from './components/Blog/MainBlog';
 
 const App = () => {
   return (
@@ -31,6 +33,8 @@ const App = () => {
           <Route path="/contact-us" exact element={<ContactUs/>} />
           <Route path="/about-us" exact element={<AboutUs/>} />
           <Route path="/partnership/blog" exact element={<Blogs/>}/>
+          <Route path="/blog-craftwork" exact element={<LandingPageBlogs/>}/>
+          <Route path="/blog" exact element={<MainBlog/>}/>
         </Routes>
       </div>
     </Router>

@@ -24,8 +24,7 @@ const Partnership = () => {
       <Packages />
       <Helps />
       <FAQComponent heading={faqCompHeading} />
-      <Certificate />
-      
+      <Certificate />      
       <BecomeCraftPartner />
       <Footer />
     </div>

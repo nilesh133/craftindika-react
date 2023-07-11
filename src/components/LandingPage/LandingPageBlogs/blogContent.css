@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600&display=swap');
+@import '../../../fonts.css';
+
+.blogContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: justify;
+}
+
+.blogTitle{
+  font-family: "MADE-Mirage";
+  font-size: 39px;
+  line-height: 45px;
+  font-weight: 400;
+  margin-top: 0;
+  color: #343935;
+  margin-bottom: 30px;
+}
+
+.blogIntroduction {
+  margin-bottom: 30px;
+}
+
+.blogIntroduction p {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 0;
+  color: #343935;
+  letter-spacing: 0.02em;
+  word-spacing: 0.02em;
+  font-family: "Red Hat Display";
+}
+
+.blogSection {
+  margin-bottom: 50px;
+}
+
+.blogSection h2 {
+  font-family: "MADE-Mirage";
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 400;
+  margin-top: 0;
+  color: #343935;
+}
+
+.blogSection p {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 0;
+  color: #343935;
+  letter-spacing: 0.02em;
+  word-spacing: 0.02em;
+  font-family: "Red Hat Display";
+  margin-bottom: 30px;
+}
+
+.blogConclusion {
+  margin-bottom: 30px;
+}
+
+.blogConclusion h2 {
+  font-family: "MADE-Mirage";
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 400;
+  margin-top: 0;
+  color: #343935;
+}
+
+.blogConclusion p {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 0;
+  color: #343935;
+  letter-spacing: 0.02em;
+  word-spacing: 0.02em;
+  font-family: "Red Hat Display";
+}
+
+.blogNavigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.navigationButton {
+  padding: 10px 0;
+  font-family: "Red Hat Display";
+  border: none;
+  color: #13aff0;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .blogContainer {
+    max-width: 768px;
+  }
+
+  .blogTitle {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .blogIntroduction p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .blogSection h2 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .blogSection p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .blogConclusion h2 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .blogConclusion p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .navigationButton {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .blogContainer {
+    padding: 10px;
+  }
+
+  .blogTitle {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .blogIntroduction p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .blogSection h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .blogSection p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .blogConclusion h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .blogConclusion p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .navigationButton {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .blogContainer {
+    padding: 10px;
+  }
+
+  .blogTitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .blogIntroduction p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .blogSection h2 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .blogSection p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .blogConclusion h2 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .blogConclusion p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .navigationButton {
+    font-size: 16px;
+  }
+}
