@@ -160,7 +160,7 @@ const Blogs = () => {
   return(
     <div>
       <BlogHero heroImg={data.heroImg} heroHeading={data.heroHeading} />
-      <BlogContent data={data}/>
+      <BlogContent data={data} postLength={newsData.length} currentPost={parseInt(searchParams.get('q'))}/>
       <Footer/>
     </div>
   );
